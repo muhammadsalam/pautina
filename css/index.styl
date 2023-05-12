@@ -50,6 +50,93 @@
     font-family 'Gilroy', sans-serif
     box-sizing: border-box
 
+ul
+    list-style: none
+
 .container
     max-width: 1600px
     padding 0 40px
+    margin 0 auto
+
+
+// код
+.link
+    opacity 1
+    &:hover
+        opacity .9
+    &:focus,&:active
+        opacity: .8
+
+body
+    font-weight 500
+
+.header
+    position absolute
+    top: 65px
+    left 0
+    width 100%
+
+.header_inner
+    display flex
+    align-items center
+    justify-content space-between
+
+.header-info
+    display flex
+    align-items center
+
+.logo
+    font-size 50px
+    font-weight 700
+    color: var(--title)
+    text-decoration none
+    line-height: 35px;
+
+.nav-list
+    display flex
+    align-items center
+    gap: 80px
+
+.nav_link
+    text-decoration none
+    color: #131313
+    line-height: 14px
+    font-size 20px
+    font-weight 600
+
+.header-info
+    font-weight 600
+
+.header-info_support
+    display flex
+    flex-direction: column
+    gap: 15px
+    line-height: 14px
+    font-size 20px
+    color: var(--body)
+    .link
+        text-decoration none
+        color: #131313
+
+.header-info_link
+    text-decoration none
+    color: #131313
+    font-size 30px
+    line-height 21px
+    margin-left 41px
+    span
+        display inline-flex
+        height 52px
+        width 52px
+        border-radius: 14px / 17px
+        background-color var(--title)
+        align-items center
+        justify-content center
+        margin-right 16px
+
+
+// секция home
+.home
+    background-color #E7E7E8
+    height 100vh
+    width 100%
