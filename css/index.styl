@@ -43,6 +43,22 @@
     --white: #FFFFFF
 
 
+// keyframes
+@keyframes arrow-right
+    0%
+        transform: rotateZ(0deg)
+    10%
+        transform: rotateZ(20deg)
+    30%
+        transform: rotateZ(-10deg)
+    50%
+        transform: rotateZ(0deg)
+    100%
+        transform rotateZ(0deg)
+
+
+
+
 // база
 *
     margin 0
@@ -61,6 +77,7 @@ ul
 
 // код
 .link
+    transition: opacity .123s ease-in
     opacity 1
     &:hover
         opacity .9
@@ -69,6 +86,7 @@ ul
 
 body
     font-weight 500
+
 
 .header
     position absolute
@@ -135,8 +153,94 @@ body
         margin-right 16px
 
 
-// секция home
 .home
-    background-color #E7E7E8
-    height 100vh
+    padding 291px 0 279px
     width 100%
+    background:  url('../img/human-home.png') no-repeat, linear-gradient(15deg, #DDD 0%, #e7e7e8 50%), #E7E7E8
+    background-position: calc(50% + 341px) calc(100% + 25px), 0 0;
+    border-radius: 0 0 100px 100px
+
+.home_block
+    max-width: 604px
+
+.home_title
+    font-size 60px
+    font-weight 700
+    line-height 42px
+
+.home_body
+    margin-top 82px
+    line-height 36px
+    font-size 24px
+    color: var(--body)
+    max-width: 552px
+
+.home-buttons
+    margin-top 90px
+
+.home-buttons_button
+    background-color var(--title)
+    padding 15px 15px 15px 40px
+    color: var(--white)
+    margin-right 44px
+    display inline-flex
+    align-items center
+    transition: background-color .123s ease-in
+    font-weight 600
+    font-size 24px
+    border-radius: 20px / 25px
+    border: none
+    line-height: 150%
+    cursor: pointer
+    &:hover
+        background-color #131313
+    &:active,&:focus
+        background-color #111
+    span
+        width 56px
+        height 56px
+        display flex
+        align-items center
+        justify-content center
+        margin-left 30px
+        background-color var(--white)
+        border-radius: 14px / 17px
+        img
+            transform-origin center
+            animation: arrow-right 2s ease-in-out infinite
+
+.home-buttons_link
+    color: var(--title)
+    font-size 24px
+    font-weight 600
+
+
+.action
+    margin 150px 0
+
+.action_inner
+    max-width: 1520px
+    padding 86px 37px 73px 38px
+    box-shadow: 0px 4px 30px #E6E6E8;
+    border-radius: 30px
+
+.action_title
+    font-size 34px
+    line-height 24px
+    text-align center
+
+.action-form
+    margin-top 63px
+    display flex
+    align-items center
+    gap: 19px
+
+.action-form_input
+    border: 2px solid #BDC1C9
+    border-radius: 20px
+    padding 30px 20px 30px 30px
+    color: var(--title)
+    font-size 20px
+    line-height 150%
+    &:placeholder
+        color: #838383

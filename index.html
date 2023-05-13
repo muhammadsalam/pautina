@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
     <link rel="stylesheet" href="css/index.css" />
 
     <title>Pautina - интернет-провайдер</title>
@@ -41,9 +45,62 @@
       </div>
     </header>
     <main class="main">
-      <section id="home" class="home"></section>
+      <section id="home" class="home">
+        <div class="container home_inner">
+          <div class="home_block">
+            <h1 class="home_title">Интернет провайдер</h1>
+            <p class="home_body">
+              Высокоскоростной и стабильный интернет для Дома и Бизнеса.
+              Подключайтесь в городе Махачкала и Каспийск. Занимайтесь любимыми
+              делами и не думайте о скорости соединения
+            </p>
+            <div class="home-buttons">
+              <button class="home-buttons_button">
+                Подключиться сейчас
+                <span><img src="img/arrow_right.svg" alt=">" /></span>
+              </button>
+              <a href="#" class="home-buttons_link link">Позвонить</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="action" class="action">
+        <div class="container action_inner">
+          <h2 class="action_title">
+            Узнайте возможность подключения по вашему адресу
+          </h2>
+          <form class="action-form">
+            <!-- инпуты [Город Улица Дом +7 (999) 999-99] -->
+            <!-- select тег [В квартиру Частный дом Для бизнеса] -->
+            <!-- кнопка [Узнать] -->
+            <input type="text" class="action-form_input" placeholder="Город" />
+            <input type="text" class="action-form_input" placeholder="Улица" />
+            <input type="text" class="action-form_input" placeholder="Дом" />
+            <input
+              type="text"
+              class="action-form_input"
+              placeholder="+7 (999) 999-99"
+            />
+            <select
+              name="action-select"
+              id="action-select"
+              class="action-form_select"
+            >
+              <option value="action-select-1">В квартиру</option>
+              <option value="action-select-2">Частный дом</option>
+              <option value="action-select-3">Для бизнеса</option>
+            </select>
+            <button class="action-form_button">Узнать</button>
+          </form>
+          <p class="action_text">
+            Нажимая на кнопку, вы принимаете
+            <span>Положение и Согласие на обработку персональных данных</span>
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
