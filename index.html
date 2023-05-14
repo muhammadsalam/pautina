@@ -70,14 +70,12 @@
             Узнайте возможность подключения по вашему адресу
           </h2>
           <form class="action-form">
-            <!-- инпуты [Город Улица Дом +7 (999) 999-99] -->
-            <!-- select тег [В квартиру Частный дом Для бизнеса] -->
-            <!-- кнопка [Узнать] -->
             <input type="text" class="action-form_input" placeholder="Город" />
             <input type="text" class="action-form_input" placeholder="Улица" />
             <input type="text" class="action-form_input" placeholder="Дом" />
             <input
               type="text"
+              id="action-input_phone"
               class="action-form_input"
               placeholder="+7 (999) 999-99"
             />
@@ -101,6 +99,7 @@
     </main>
     <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

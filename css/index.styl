@@ -238,9 +238,69 @@ body
 .action-form_input
     border: 2px solid #BDC1C9
     border-radius: 20px
-    padding 30px 20px 30px 30px
+    padding 24px 20px 24px 26px
     color: var(--title)
     font-size 20px
-    line-height 150%
+    line-height 14px
+    height 74px
+    max-width: 225px
     &:placeholder
         color: #838383
+
+.action-form
+    .choices
+        flex: 1
+        max-width: 225px
+        margin-bottom 0
+        border: 2px solid #bdc1c9
+        border-radius: 20px
+        &:after
+            right 30px
+        &.is-focused
+            border: 2px solid black
+        overflow visible
+    .choices__inner
+        height 74px
+        border-radius: 20px
+        display flex
+        align-items center
+        border: 0
+    .choices__item:not(.choices__item--selected)
+        font-size 20px !important
+        font-weight 600
+        line-height 14px
+        padding 24px 24px 24px 28px !important
+        &.is-selected
+            display none
+
+.action-form_button
+    flex: 1
+    max-width: 225px
+    background-color #252322
+    padding 24px 0
+    text-align center
+    color: var(--white)
+    font-weight 700
+    cursor: pointer
+    font-size 24px
+    border-radius: 20px
+    transition: background-color .123s ease-in, color .123s ease-in
+    line-height 100%
+    border: 0
+    &:hover
+        background-color #2a2828
+    &:active, &:focus
+        background-color #363434
+
+.action_text
+    font-size 19px
+    line-height 150%
+    height 13px
+    font-weight 600
+    color: #818181
+    text-align center
+    margin-top 50px
+    span
+        font-weight 700
+        color: var(--title)
+        cursor: pointer
