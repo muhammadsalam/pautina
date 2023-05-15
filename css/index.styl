@@ -353,3 +353,125 @@ body
         margin-top 50px
         color: var(--body)
         max-width: 170px
+
+
+.stocks
+    margin 150px 0
+
+.stock_inner
+    border-radius: 40px
+    padding 0
+    background: linear-gradient(111.41deg, #ECECF4 0%, #E2E2EB 64.08%)
+
+.swiper
+    overflow: visible
+
+.swiper-wrapper
+    align-items stretch
+
+.swiper-button-next, .swiper-button-prev
+    color: #1C1B1F
+    padding 25px
+    background-color #EAEAF2
+    border-radius: 20px
+    width auto
+    height auto
+    transition background-color .123s ease-in
+
+.swiper-button-prev:hover, .swiper-button-next:hover
+    background-color #e6e6e8
+
+.swiper-button-prev:after, .swiper-button-next:after
+    content none
+
+.swiper-button-prev
+    left: -120px
+
+.swiper-button-next
+    right -120px
+
+.swiper-slide
+    display flex
+    justify-content space-between
+    align-items center
+    height auto
+    padding: 139px 109px 116px
+
+.swiper-slide-active
+    .swiper-left_title
+        transition: .25s transform .2s ease-in
+        transform: translateX(0)
+
+    .swiper-left_text
+        transition: .3s transform .2s ease-in
+        transform: translateX(0)
+
+    .swiper-left_link
+        opacity: 1
+        visibility: visible
+        transition: .35s opacity .2s ease-in
+
+    .swiper-right_img
+        transform: translate(-25%, -50%)
+        transition: .4s transform .15s ease-out
+
+.swiper-left
+    display flex
+    flex-direction: column
+    align-items flex-start
+    justify-content space-between
+    height 100%
+    
+.swiper-left_title-block
+    overflow: hidden
+    margin -20px 0
+    padding 20px 0
+
+.swiper-left_title
+    font-size 60px
+    color: var(--title)
+    font-weight 700
+    line-height 42px
+    transition: transform .15s ease-in
+    transform: translateX(-100%)
+
+.swiper-left_text-block
+    overflow: hidden
+
+.swiper-left_text
+    font-weight 500
+    font-size 24px
+    line-height 150%
+    margin 62px 0
+    max-width: 660px
+    transition: transform .15s ease-in
+    transform: translateX(-100%)
+
+.swiper-left_link
+    color: #fff
+    text-decoration none
+    display inline-block
+    background-color var(--title)
+    padding 30px 65px
+    border-radius: 20px
+    line-height 17px
+    font-size 24px
+    font-weight 600
+    opacity: 0
+    visibility: hidden
+    transition: opacity .15s ease-in
+
+.swiper-right_img
+    position absolute
+    right 0
+    top: 50%
+    transform: translate(-25%, 100%)
+    transition: transform .15s ease-in
+
+.swiper-pagination-bullet
+    height 14px
+    width 14px
+    background-color #B9B9B9
+
+.swiper-pagination-bullet-active
+    background-color #252322
