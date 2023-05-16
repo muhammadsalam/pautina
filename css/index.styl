@@ -69,6 +69,10 @@
 ul
     list-style: none
 
+a
+    color inherit
+    text-decoration none
+
 .container
     max-width: 1600px
     padding 0 40px
@@ -106,9 +110,11 @@ body
 .logo
     font-size 50px
     font-weight 700
-    color: var(--title)
     text-decoration none
     line-height: 35px;
+
+.header-logo
+    color: var(--title)
 
 .nav-list
     display flex
@@ -601,3 +607,110 @@ body
     font-size 24px
     color: #fff
     text-decoration none
+
+
+.faq
+    padding: 150px 0
+
+.faq_title
+    text-align center
+
+.faq-list
+    margin-top 100px
+    display flex
+    align-items center
+    flex-direction: column
+    gap: 26px
+
+.faq-item
+    width 100%
+    max-width: 1260px
+    background: #FFFFFF;
+    border: 1px solid #BDC1C9;
+    box-shadow: 0px 4px 30px #E6E6E8;
+    border-radius: 20px;
+    --offset: 40px
+    transition: padding-bottom .123s ease-in
+
+.faq-item[open]
+    padding-bottom var(--offset)
+    .faq-item_summary:before
+        transform: rotate(45deg)
+.faq-item_summary
+    list-style: none
+    position relative
+    display flex
+    align-items center
+    padding var(--offset)
+    line-height 17px
+    font-size 24px
+    font-weight 600
+    color: #000
+    cursor: pointer
+
+.faq-item_text
+    padding 0 var(--offset)
+    max-height: 0
+    overflow: hidden
+    transition: max-height .2s ease-in
+
+.faq-item_summary::before
+    content: url('../img/plus.svg');
+    position: absolute;
+    right var(--offset)
+    transition: transform .2s ease-out;
+    line-height 0
+
+
+.footer
+    background-color #0D0D0D
+    color: #fff
+    margin-top 200px
+
+.footer-top
+    padding 80px 0
+    display flex
+    justify-content space-between
+
+.footer-list
+    max-width: 351px
+
+.footer-item:not(:last-child)
+    margin-bottom 12px
+
+.footer-item--address:not(:last-child)
+    margin-bottom 24px
+
+.footer-item:first-child
+    margin-bottom 36px
+
+.footer-item_strong
+    line-height 28px
+    font-weight 700
+    font-size 30px
+
+.footer-item_link
+    font-size 20px
+    line-height 28px
+
+.footer-item_address
+    font-size 20px
+    line-height 28px
+
+.footer-bottom
+    padding 50px 0
+    display flex
+    align-items center
+    justify-content space-between
+    border-top: 1px solid #313131;
+
+.footer-bottom_text
+    font-weight 600
+    font-size 20px
+    line-height 28px
+    color: #868686
+
+.footer-bottom_contact
+    display flex
+    align-items center
+    gap: 42px
