@@ -730,7 +730,6 @@ body
 .footer
     background-color #0D0D0D
     color: #fff
-    margin-top 200px
 
 .footer a
     color: inherit
@@ -1018,6 +1017,35 @@ body
         font-size 18px
         padding 20px 50px
 
+    .footer-top
+        padding-top 60px
+
+    .footer-item:not(:last-child)
+        margin-bottom 8px
+
+    .footer-item:first-child
+        margin-bottom 26px
+
+    .footer-item_strong
+        font-size 24px
+        line-height 21px
+
+    .footer-item_link, .footer-item_address
+        font-size 16px
+
+    .footer-item_link--icon
+        line-height 1
+        img
+            width 160px
+
+    .footer-bottom
+        padding 25px 0 29px
+
+    .footer-bottom_text
+        font-size 14px
+    
+    .footer-bottom_link img
+        width 30px
 
 @media (max-width: 1130px)
     .tarriff_title
@@ -1187,6 +1215,12 @@ body
     .faq
         padding 100px 0
 
+    .footer-list
+        max-width: 283px
+
+    .footer-item_link--icon img
+        width 140px
+
 @media (max-width 768px)        
     .header-burger
         display flex
@@ -1351,6 +1385,23 @@ body
         font-size 20px
         padding 15px 20px
         margin-left 20px
+
+    .footer-top
+        flex-wrap: wrap
+
+    .footer-list
+        max-width: 180px
+
+    .footer-list:last-child
+        flex-basis: 100%
+        margin-top 56px
+        display flex
+        align-items center
+        gap: 16px
+        max-width: 321px
+
+    .footer-list:last-child .footer-item:first-child
+        margin-bottom 0
 
 @media (max-width 640px)
 
@@ -1581,3 +1632,32 @@ body
 
     .faq-item_text
         font-size 14px
+
+    .footer-top
+        gap: 20px
+
+    .footer-list
+        max-width: 156px
+
+    .footer-item_strong
+        font-size 20px
+
+    .footer-item_address, .footer-item_link
+        font-size 14px
+
+    .footer-list:last-child
+        flex-direction: column
+        flex-basis: auto
+        order: 2
+    
+    .footer-list:nth-child(2)
+        order: 1
+
+    .footer-item_link--icon img
+        width 115px
+
+    .footer-bottom_text
+        display none
+
+    .footer-bottom_contact
+        gap: 24px
