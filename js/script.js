@@ -33,48 +33,48 @@
 // });
 
 // слайдер
-const swiper = new Swiper(".swiper", {
-  effect: "creative",
-  pagination: {
-    clickable: true,
-    el: ".swiper-pagination",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// const swiper = new Swiper(".swiper", {
+//   effect: "creative",
+//   pagination: {
+//     clickable: true,
+//     el: ".swiper-pagination",
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 // // аккордеон
 // // Получаем .faq-list
-// const faqList = document.querySelector(".faq-list");
+const faqList = document.querySelector(".faq-list");
 
-// // Добавляем обработчик события для кликов внутри .faq-list
-// faqList.addEventListener("click", (event) => {
-//   // Проверяем, был ли клик на элементе с классом .faq-item_summary
-//   if (event.target.classList.contains("faq-item_summary")) {
-//     // Получаем соответствующие элементы аккордеона
-//     const summary = event.target;
-//     const item = summary.parentNode;
-//     const text = item.querySelector(".faq-item_text");
+// Добавляем обработчик события для кликов внутри .faq-list
+faqList.addEventListener("click", (event) => {
+  // Проверяем, был ли клик на элементе с классом .faq-item_summary
+  if (event.target.classList.contains("faq-item_summary")) {
+    // Получаем соответствующие элементы аккордеона
+    const summary = event.target;
+    const item = summary.parentNode;
+    const text = item.querySelector(".faq-item_text");
 
-//     // Проверяем, открыт ли элемент
-//     const isOpen = item.hasAttribute("open");
+    // Проверяем, открыт ли элемент
+    const isOpen = item.hasAttribute("open");
 
-//     // Закрываем все элементы аккордеона
-//     const allItems = faqList.querySelectorAll(".faq-item");
-//     allItems.forEach((el) => {
-//       el.removeAttribute("open");
-//       el.querySelector(".faq-item_text").style.maxHeight = null;
-//     });
+    // Закрываем все элементы аккордеона
+    const allItems = faqList.querySelectorAll(".faq-item");
+    allItems.forEach((el) => {
+      el.removeAttribute("open");
+      el.querySelector(".faq-item_text").style.maxHeight = null;
+    });
 
-//     // Открываем или закрываем текущий элемент
-//     if (!isOpen) {
-//       item.setAttribute("open", "");
-//       text.style.maxHeight = text.scrollHeight + "px";
-//     } else text.style.maxHeight = null;
-//   }
-// });
+    // Открываем или закрываем текущий элемент
+    if (!isOpen) {
+      item.setAttribute("open", "");
+      text.style.maxHeight = text.scrollHeight + "px";
+    } else text.style.maxHeight = null;
+  }
+});
 
 // // кнопка бургер
 // // const burger = document.querySelector(".burger");

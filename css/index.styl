@@ -696,10 +696,6 @@ body
     --offset: 40px
     transition: padding-bottom .123s ease-in
 
-.faq-item[open]
-    padding-bottom var(--offset)
-    .faq-item_summary:before
-        transform: rotate(45deg)
 .faq-item_summary
     list-style: none
     position relative
@@ -711,6 +707,11 @@ body
     font-weight 600
     color: #000
     cursor: pointer
+
+.faq-item[open]
+    padding-bottom var(--offset)
+    .faq-item_summary:before
+        transform: rotate(45deg)
 
 .faq-item_text
     padding 0 var(--offset)
@@ -1066,6 +1067,25 @@ body
         border-radius: 12px
         padding 16px 40px
 
+    .faq
+        padding 127px 0
+    
+    .faq_inner
+        max-width: 960px
+
+    .faq-list
+        margin-top 70px
+
+    .faq-item_summary
+        font-size 18px
+        &:before
+            transform: scale(.72)
+
+    .faq-item[open] .faq-item_summary:before
+        transform: rotate(45deg) scale(.72)
+    
+    .faq-item_text
+        font-size 16px
 
 @media (max-width 960px)
     .container
@@ -1163,6 +1183,9 @@ body
 
     .tarriff-card
         padding 45px 40px
+
+    .faq
+        padding 100px 0
 
 @media (max-width 768px)        
     .header-burger
@@ -1408,6 +1431,22 @@ body
         padding 15px 32px
         margin-top 25px
 
+    .faq
+        margin-bottom 70px
+
+    .faq-list
+        margin-top 40px
+        gap: 20px
+
+    .faq-item_summary
+        padding 26px 50px 26px 26px
+        line-height 13px
+        &:before
+            transform scale(.7)
+    
+    .faq-item[open] .faq-item_summary:before
+        transform: rotate(45deg) scale(.7)
+
 @media (max-width 480px)
     .nav-list
         flex-direction: column
@@ -1524,3 +1563,21 @@ body
     .iptv-card_list
         margin-top 20px
         font-size 16px
+
+    .faq
+        padding 60px 0
+
+    .faq-list
+        gap: 10px
+
+    .faq-item_summary
+        font-size 16px
+        &:before
+            transform: scale(.60)
+            right: 19px
+    
+    .faq-item[open] .faq-item_summary:before
+        transform: rotate(45deg) scale(.60)
+
+    .faq-item_text
+        font-size 14px
