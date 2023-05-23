@@ -506,13 +506,13 @@ body
 
 .swiper-left_text-block
     overflow: hidden
+    max-width: 660px
+    margin 62px 0
 
 .swiper-left_text
     font-weight 500
     font-size 24px
     line-height 150%
-    margin 62px 0
-    max-width: 660px
     transition: transform .15s ease-in
     transform: translateX(-100%)
 
@@ -553,6 +553,7 @@ body
     margin-top 100px
     display flex
     justify-content space-between
+    gap: 40px
 
 .iptv-card
     background: #FFFFFF;
@@ -794,6 +795,13 @@ body
     .swiper-slide-active .swiper-right_img
         transform: scale(.74) translate(-10%,-50%) !important
 
+    .iptv-list
+        margin-top 50px
+        
+    .iptv-card
+        padding 34px 30px
+
+    
 
 @media (max-width: 1500px)
     .header
@@ -933,10 +941,12 @@ body
     .swiper-left_title
         font-size 40px
 
+    .swiper-left_text-block
+        max-width: 380px
+        margin 32px 0
+
     .swiper-left_text
         font-size 16px
-        margin 32px 0
-        max-width: 380px
 
     .swiper-right_img
         transform-origin: top !important
@@ -1024,6 +1034,23 @@ body
         padding 18px 38px
         border-radius: 12px
         font-size 16px
+
+    .iptv-list
+        gap: 20px
+    
+    .iptv-card
+        padding 27px 24px
+
+    .iptv-card_title
+        font-size 18px
+        img
+            width 24px
+            height 24px
+            margin-right 10px
+
+    .iptv-card_list
+        margin-top 24px
+        font-size 14px
 
 
 @media (max-width 768px)        
@@ -1137,9 +1164,9 @@ body
     .swiper-left_title
         font-size 30px
     
-    .swiper-left_text
-        margin 44px 0
+    .swiper-left_text-block
         max-width: 325px
+        margin 44px 0
 
     .swiper-right_img
         transform: scale(.49) translate(20%,100%)
@@ -1159,6 +1186,30 @@ body
         width 8px
         height 8px
 
+    .iptv
+        margin 75px 0
+
+    .iptv-list
+        margin-top 40px
+        gap: 10px
+
+    .iptv-card
+        background-color transparent
+        border: 0
+        box-shadow: none
+        padding 0
+        
+    .iptv-card_list
+        padding-left 24px
+    
+    .iptv-card_title
+        font-size 16px
+        img
+            margin-right 7.5px
+    
+    .iptv-card_list
+        font-size 14px
+
 @media (max-width 640px)
 
     .stocks
@@ -1167,10 +1218,12 @@ body
     .swiper-left_title
         font-size 24px
 
-    .swiper-left_text
+    .swiper-left_text-block
         max-width 225px
-        font-size 14px
         margin 15px 0
+
+    .swiper-left_text
+        font-size 14px
 
     .swiper-left_link
         padding 15px 32px
@@ -1268,10 +1321,8 @@ body
         text-align center
         align-items center
 
-    .swiper-left_text
+    .swiper-left_text-block
         margin 20px 0 36px
-
-    .swiper-left_text
         max-width: 100%
 
     .swiper-slide:nth-child(1) .swiper-right_img
@@ -1291,3 +1342,15 @@ body
 
     .swiper-pagination
         bottom -20px !important
+
+    .iptv
+        margin 60px 0
+
+    .iptv-list
+        gap: 30px
+        flex-direction: column
+        align-items flex-start
+
+    .iptv-card_list
+        margin-top 20px
+        font-size 16px
